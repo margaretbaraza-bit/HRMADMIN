@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify that admin users search panel filters users correctly",
+        "description": "",
+        "id": "admin-user;verify-that-admin-users-search-panel-filters-users-correctly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10441115800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in",
+            "match": {
+              "location": "Adm_searchUserTest.iAmLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2748375700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the admin menu",
+            "match": {
+              "location": "Adm_searchUserTest.iClickTheAdminMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2071944700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see the users page",
+            "match": {
+              "location": "Adm_searchUserTest.iShouldSeeTheUsersPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2173070000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter user data",
+            "match": {
+              "location": "Adm_searchUserTest.iEnterUserData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3149935300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the search button",
+            "match": {
+              "location": "Adm_searchUserTest.iClickOnTheSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82499200,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Alice.Duval]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat Pages.admin_pages.AssertSearchresult(admin_pages.java:70)\r\n\tat Step_Definition.Adm_searchUserTest.searchResultShouldReturnTheCorrectUser(Adm_searchUserTest.java:80)\r\n\tat ✽.Then Search result should return the correct user(Adm_searchUser.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Search result should return the correct user",
+            "match": {
+              "location": "Adm_searchUserTest.searchResultShouldReturnTheCorrectUser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Admin User",
+    "description": "",
+    "id": "admin-user",
+    "keyword": "Feature",
+    "uri": "Adm_searchUser.feature"
+  }
+]
